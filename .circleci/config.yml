@@ -5,7 +5,9 @@ orbs:
 
 jobs:
   build-android:
-    executor: android/android
+    executor:
+      name: android/android-machine
+      resource-class: medium
 
     steps:
       - checkout
